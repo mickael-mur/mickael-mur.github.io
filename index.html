@@ -3,8 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mickaël MUR - Technicien Informatique & Développeur">
-    <title>Mickaël MUR - Portfolio</title>
+    <meta name="description" content="Mickaël MUR - Technicien Informatique & Développeur Full Stack Junior. Expert en systèmes, réseaux, et développement d'applications. Plus de 10 ans d'expérience.">
+    <meta name="keywords" content="développeur, technicien informatique, full stack, python, javascript, réseaux, systèmes, Montpellier, Fréjus">
+    <meta name="author" content="Mickaël MUR">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mickael-mur.github.io/">
+    <meta property="og:title" content="Mickaël MUR - Portfolio">
+    <meta property="og:description" content="Technicien Informatique & Développeur Full Stack Junior">
+    <meta property="og:image" content="https://mickael-mur.github.io/images/profile.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://mickael-mur.github.io/">
+    <meta property="twitter:title" content="Mickaël MUR - Portfolio">
+    <meta property="twitter:description" content="Technicien Informatique & Développeur Full Stack Junior">
+    <meta property="twitter:image" content="https://mickael-mur.github.io/images/profile.jpg">
+
+    <title>Mickaël MUR - Portfolio | Développeur & Technicien IT</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -13,14 +30,23 @@
     <nav class="navbar">
         <div class="container">
             <h1 class="logo">Mickaël MUR</h1>
+            <button class="menu-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <ul class="nav-links">
                 <li><a href="#accueil">Accueil</a></li>
                 <li><a href="#apropos">À propos</a></li>
                 <li><a href="#competences">Compétences</a></li>
                 <li><a href="#experience">Expérience</a></li>
+                <li><a href="#certifications">Certifications</a></li>
                 <li><a href="#projets">Projets</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <button class="theme-toggle" aria-label="Changer de thème">
+                <i class="fas fa-moon"></i>
+            </button>
         </div>
     </nav>
 
@@ -30,12 +56,20 @@
             <div class="hero-content">
                 <h2>Bonjour, je suis</h2>
                 <h1 class="hero-title">Mickaël MUR</h1>
-                <p class="hero-subtitle">Développeur Full Stack Junior</p>
+                <p class="hero-subtitle">
+                    <span class="typing-text"></span>
+                    <span class="cursor">|</span>
+                </p>
                 <div class="hero-buttons">
                     <a href="#contact" class="btn btn-primary">Me contacter</a>
                     <a href="#projets" class="btn btn-secondary">Voir mes projets</a>
                 </div>
             </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#apropos" aria-label="Défiler vers le bas">
+                <i class="fas fa-chevron-down"></i>
+            </a>
         </div>
     </section>
 
@@ -45,7 +79,7 @@
             <h2 class="section-title">À propos de moi</h2>
             <div class="about-content">
                 <div class="about-image">
-                    <img src="images/profile.jpg" alt="Photo de profil">
+                    <img src="images/profile.jpg" alt="Photo de profil de Mickaël MUR" loading="lazy">
                 </div>
                 <div class="about-text">
                     <h3>Qui suis-je ?</h3>
@@ -96,8 +130,49 @@
         </div>
     </section>
 
+    <!-- Section Certifications -->
+    <section id="certifications" class="section">
+        <div class="container">
+            <h2 class="section-title">Certifications & Formations</h2>
+            <div class="certifications-grid">
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Formation Développeur Full Stack</h3>
+                    <p class="cert-org">Holberton School</p>
+                    <p class="cert-date">En cours</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Technicien Supérieur Systèmes et Réseaux</h3>
+                    <p class="cert-org">Certification Professionnelle</p>
+                    <p class="cert-date">2015</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fab fa-microsoft"></i>
+                    </div>
+                    <h3>Microsoft Certified</h3>
+                    <p class="cert-org">Windows Server & Azure</p>
+                    <p class="cert-date">2018</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Administration Réseaux</h3>
+                    <p class="cert-org">Formation Continue</p>
+                    <p class="cert-date">2020</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Section Expérience -->
-    <section id="experience" class="section">
+    <section id="experience" class="section bg-light">
         <div class="container">
             <h2 class="section-title">Expérience professionnelle</h2>
             <div class="timeline">
@@ -130,13 +205,13 @@
     </section>
 
     <!-- Section Projets -->
-    <section id="projets" class="section bg-light">
+    <section id="projets" class="section">
         <div class="container">
             <h2 class="section-title">Mes projets</h2>
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="images/project1.jpg" alt="Projet 1">
+                        <img src="images/project1.jpg" alt="Capture d'écran du projet 1" loading="lazy">
                     </div>
                     <div class="project-content">
                         <h3>Nom du projet 1</h3>
@@ -149,7 +224,7 @@
                 </div>
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="images/project2.jpg" alt="Projet 2">
+                        <img src="images/project2.jpg" alt="Capture d'écran du projet 2" loading="lazy">
                     </div>
                     <div class="project-content">
                         <h3>Nom du projet 2</h3>
@@ -162,7 +237,7 @@
                 </div>
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="images/project3.jpg" alt="Projet 3">
+                        <img src="images/project3.jpg" alt="Capture d'écran du projet 3" loading="lazy">
                     </div>
                     <div class="project-content">
                         <h3>Nom du projet 3</h3>
@@ -178,24 +253,29 @@
     </section>
 
     <!-- Section Contact -->
-    <section id="contact" class="section">
+    <section id="contact" class="section bg-light">
         <div class="container">
             <h2 class="section-title">Contactez-moi</h2>
             <div class="contact-content">
                 <div class="contact-info">
                     <h3>Discutons de votre projet</h3>
                     <p>N'hésitez pas à me contacter pour toute question ou opportunité de collaboration.</p>
+                    <div class="contact-details">
                         <div class="contact-item">
                             <i class="fas fa-map-marker-alt"></i>
                             <span>Fréjus, France</span>
                         </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>murmickael@gmail.com</span>
+                        </div>
                     </div>
                 </div>
-                <form class="contact-form">
-                    <input type="text" placeholder="Nom" required>
-                    <input type="email" placeholder="Email" required>
-                    <input type="text" placeholder="Sujet">
-                    <textarea placeholder="Message" rows="5" required></textarea>
+                <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                    <input type="text" name="name" placeholder="Nom" required aria-label="Votre nom">
+                    <input type="email" name="email" placeholder="Email" required aria-label="Votre email">
+                    <input type="text" name="subject" placeholder="Sujet" aria-label="Sujet du message">
+                    <textarea name="message" placeholder="Message" rows="5" required aria-label="Votre message"></textarea>
                     <button type="submit" class="btn btn-primary">Envoyer</button>
                 </form>
             </div>
@@ -207,12 +287,17 @@
         <div class="container">
             <p>&copy; 2025 Mickaël MUR. Tous droits réservés.</p>
             <div class="footer-links">
-                <a href="https://github.com/mickael-mur" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/mickaël-mur-68bb5a338" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="mailto:murmickael@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://github.com/mickael-mur" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/mickaël-mur-68bb5a338" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:murmickael@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
             </div>
         </div>
     </footer>
+
+    <!-- Bouton Retour en haut -->
+    <button id="scrollTopBtn" class="scroll-top" aria-label="Retour en haut">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
     <script src="js/script.js"></script>
 </body>
