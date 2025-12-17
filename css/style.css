@@ -236,18 +236,25 @@ body {
     text-align: center;
     position: relative;
     z-index: 1;
+    color: #ffffff !important;
+}
+
+.hero-content * {
+    color: inherit;
 }
 
 .hero h2 {
     font-size: 1.5rem;
     font-weight: 400;
     margin-bottom: 0.5rem;
+    color: #ffffff !important;
 }
 
 .hero-title {
     font-size: 4rem;
     font-weight: bold;
     margin-bottom: 1rem;
+    color: #ffffff !important;
 }
 
 .hero-subtitle {
@@ -255,15 +262,18 @@ body {
     margin-bottom: 2rem;
     opacity: 0.9;
     min-height: 2.5rem;
+    color: #ffffff !important;
 }
 
 .typing-text {
     display: inline-block;
+    color: #ffffff !important;
 }
 
 .cursor {
     display: inline-block;
     animation: blink 0.7s infinite;
+    color: #ffffff !important;
 }
 
 @keyframes blink {
