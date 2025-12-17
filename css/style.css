@@ -521,8 +521,10 @@ body {
 /* ===== Projects Section ===== */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .project-card {
@@ -572,6 +574,40 @@ body {
 
 .project-links a:hover {
     color: var(--secondary-color);
+}
+
+/* Project icon */
+.project-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    font-size: 4rem;
+    color: var(--white);
+}
+
+/* Project tags */
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.project-tags .tag {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    background: var(--bg-light);
+    color: var(--primary-color);
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+[data-theme="dark"] .project-tags .tag {
+    background: rgba(59, 130, 246, 0.2);
+    color: var(--primary-color);
 }
 
 /* ===== Contact Section ===== */
