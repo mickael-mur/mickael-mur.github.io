@@ -138,8 +138,6 @@ if (document.readyState === 'loading') {
 const contactForm = document.querySelector('.contact-form');
 if (contactForm) {
     contactForm.addEventListener('submit', async function(e) {
-        // Si vous utilisez FormSpree, commentez la ligne suivante
-        // et remplacez YOUR_FORM_ID dans l'attribut action du formulaire
         e.preventDefault();
 
         const submitBtn = this.querySelector('button[type="submit"]');
@@ -152,15 +150,6 @@ if (contactForm) {
         // Récupérer les valeurs du formulaire
         const formData = new FormData(this);
 
-        // Simuler l'envoi (remplacer par FormSpree ou votre backend)
-        setTimeout(() => {
-            alert('Merci pour votre message ! Je vous répondrai bientôt.');
-            this.reset();
-            submitBtn.textContent = originalText;
-            submitBtn.disabled = false;
-        }, 1000);
-
-        /* Si vous utilisez FormSpree, décommentez ce code et commentez le setTimeout ci-dessus:
         try {
             const response = await fetch(this.action, {
                 method: 'POST',
@@ -171,18 +160,17 @@ if (contactForm) {
             });
 
             if (response.ok) {
-                alert('Merci pour votre message ! Je vous répondrai bientôt.');
+                alert('✅ Merci pour votre message ! Je vous répondrai bientôt.');
                 this.reset();
             } else {
                 throw new Error('Erreur lors de l\'envoi');
             }
         } catch (error) {
-            alert('Une erreur est survenue. Veuillez réessayer.');
+            alert('❌ Une erreur est survenue. Veuillez réessayer ou me contacter directement par email.');
         } finally {
             submitBtn.textContent = originalText;
             submitBtn.disabled = false;
         }
-        */
     });
 }// ===== Scroll to Top Button =====
 const scrollTopBtn = document.getElementById('scrollTopBtn');
